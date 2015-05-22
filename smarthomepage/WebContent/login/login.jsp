@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+    <%@ page import="java.text.SimpleDateFormat" %>
+	<%@ page import="java.util.Calendar" %>
+	
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,9 +29,9 @@ function join() {
 </script>
 </head>
 <body>
+
 	<div style="width: 100%" align="center">
-		<%-- <%=new java.util.date() %> --%>
-		<%=new java.util.Date() %>
+		
 		<h1>·Î±×ÀÎ</h1>
 		<img src="images/logo.png" alt="" />
 		<div>

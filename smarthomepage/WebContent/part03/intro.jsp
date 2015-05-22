@@ -8,9 +8,14 @@
 </head>
 <body>
 	<div>
-	<h3>로그인 폼 샘플</h3>
+	<h3>로그인 폼 샘플(ID 와 숫자 입력)</h3>
 	<div>
 		<a href="part03/login_form.do">바로가기</a>
+	</div>
+	<div>
+	<h3>로그인 폼 2 샘플(ID 와 Password 입력)</h3>
+	<div>
+		<a href="part03/login_form2.do">바로가기</a>
 	</div>
 	</div>
 	<div>
