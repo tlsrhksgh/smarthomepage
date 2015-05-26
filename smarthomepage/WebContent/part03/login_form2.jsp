@@ -20,6 +20,19 @@
 		function join() {
 			location.href = "join_form.jsp";
 		}
+		function loginCheck() {
+			if(document.frm.userid.value.length == 0){
+				alert("아이디를 써주세요.")
+				frm.userid.focus(); /* 커서를 인풋텍스트 칸에 위치시킨다. 사용자편의를 위해 */
+				return false;
+			}
+			if(document.frm.pwd.value == ""){
+				alert("비밀번호는 반드시 입력해야 합니다.");
+				frm.pwd.focus();
+				return false;
+			}
+			return true;
+		}
 	</script>
 </head>
 <body>
@@ -39,12 +52,12 @@
 		<h1>로그인</h1>
 		<img src="../images/naverlogo.gif" alt="" />
 		<div style="margin-top: 20px">
-			<form action="${pageContext.request.contextPath}/part03/login_demo2.do">
+			<form name="frm" action="${pageContext.request.contextPath}/part03/login_demo2.do">
 				<label for="userid">아이디 :</label>
 				<input type="text" name="id" id="id" placeholder="아이디를 입력해 주세요"/><br />
 				<label for="password" >암 호</label>
 				<input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력해주세요"/><br />
-				<input type="submit" value="로그인" />
+				<input type="submit" value="로그인" onclick="return loginCheck()"/>
 				
 			</form>
 			

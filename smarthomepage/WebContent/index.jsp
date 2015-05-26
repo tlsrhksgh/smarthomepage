@@ -25,12 +25,17 @@
 				<a href="part02.do">part 2. JSP 문법</a>
 			</td>
 		</tr>
+		
 		<tr>
 		<td style="border:1px solid #808080; width: 30%;">
 		<a href="part03.do">part 3. 서블릿 문법</a>
 		</td>
 		</tr>
-		
+		<tr>
+			<td style="border:1px solid #808080; width: 30%;">
+				<a href="part04.do">part 4. JDBC </a>
+			</td>
+		</tr>
 		<tr>
 		<td style="border:1px solid #808080; width: 30%;">
 		</td>
